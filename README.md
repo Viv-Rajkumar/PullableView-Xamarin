@@ -19,7 +19,7 @@ Added a new function to the Obj-C code to selectively ignore mouse clicks on the
 
 1. `PullableViewDelegate`'s `DidChangeState` exposed as a C# event to allow easy subscribing to change state notifications such as:
 
-    _pullableView.DidChangeState += (sender, e) => Console.WriteLine ("State of Menu: " + (e.Opened ? "Open" : "Closed"));
+    `_pullableView.DidChangeState += (sender, e) => Console.WriteLine ("State of Menu: " + (e.Opened ? "Open" : "Closed"));`
 
 2. Added a new constructor to `PullableView` mapped to `initWithFrame:`
 
